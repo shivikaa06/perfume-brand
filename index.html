@@ -1,0 +1,327 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal Scents</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#perfumes">Perfumes</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero">
+            <h1>Eternal Scents</h1>
+            <p>Indulge in the art of fragrance, crafted with love and care</p>
+            <button>Explore</button>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>Eternal Scents is a luxury perfume brand dedicated to creating unique and alluring fragrances.</p>
+        <img src="about-author.jpg" alt="About Author">
+    </section>
+
+    <!-- Perfumes Section -->
+    <section id="perfumes">
+        <h2>Perfumes</h2>
+        <div class="perfume-grid">
+            <!-- Perfume 1 -->
+            <article>
+                <img src="perfume-1.jpg" alt="Perfume 1">
+                <h3>Perfume 1</h3>
+                <p>Top notes: Bergamot, Lavender; Heart notes: Rose, Jasmine; Base notes: Vanilla, Musk</p>
+            </article>
+
+            <!-- Perfume 2 -->
+            <article>
+                <img src="perfume-2.jpg" alt="Perfume 2">
+                <h3>Perfume 2</h3>
+                <p>Top notes: Lemon, Geranium; Heart notes: Orange Blossom, Tuberose; Base notes: Sandalwood, Vetiver</p>
+            </article>
+
+            <!-- Perfume 3 -->
+            <article>
+                <img src="perfume-3.jpg" alt="Perfume 3">
+                <h3>Perfume 3</h3>
+                <p>Top notes: Grapefruit, Pink Peppercorn; Heart notes: Rose, Jasmine; Base notes: Vanilla, Musk</p>
+            </article>
+
+            <!-- Perfume 4 -->
+            <article>
+                <img src="perfume-4.jpg" alt="Perfume 4">
+                <h3>Perfume 4</h3>
+                <p>Top notes: Bergamot, Lemon; Heart notes: Lavender, Honeysuckle; Base notes: Sandalwood, Patchouli</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Gift Ideas Section -->
+    <section id="gift-ideas">
+        <h2>Gift Ideas</h2>
+        <ul>
+            <li>Perfume Set</li>
+            <li>Fragrance Accessories</li>
+            <li>Gift Box</li>
+        </ul>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <article>
+            <h3>Perfume Trends</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <a href="#">Read More</a>
+        </article>
+
+        <article>
+            <h3>Fragrance Reviews</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <a href="#">Read More</a>
+        </article>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+            <button>Send</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Eternal Scents. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
+
+**CSS Styles (in styles.css file)**
+
+```css
+body {
+    font-family: Playfair Display, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1A1D23;
+    color: #F5F5DC;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #F5F5DC;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    padding-top: 50%;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F5F5DC;
+    font-size: 48px;
+}
+
+.hero p {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #F5F5DC;
+    font-size: 18px;
+}
+
+.perfume-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.perfume-article {
+    background-color: #1A1D23;
+    color: #F5F5DC;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.perfume-article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.perfume-article h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.perfume-article p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+_gift-ideas ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+_gift-ideas li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #1A1D23;
+    color: #F5F5DC;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+_gift-ideas li a {
+    text-decoration: none;
+    color: #F5F5DC;
+}
+
+_blog ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+_blog li {
+    display: inline-block;
+    margin-right: 20px;
+    background-color: #1A1D23;
+    color: #F5F5DC;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+_blog li a {
+    text-decoration: none;
+    color: #F5F5DC;
+}
+
+_contact-us form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #1A1D23;
+    color: #F5F5DC;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+_contact-us label {
+    margin-bottom: 10px;
+}
+
+_contact-us input, textarea {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+_contact-us button[type="submit"] {
+    background-color: #FFD700;
+    color: #1A1D23;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #1A1D23;
+    color: #F5F5DC;
+    padding: 20px;
+    text-align: center;
+}
+```
+
+**JavaScript Code (in script.js file)**
+
+```javascript
+// Add event listener to contact form submit
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var name = document.querySelector('#name').value;
+    var email = document.querySelector('#email').value;
+    var phone = document.querySelector('#phone').value;
+    var message = document.querySelector('#message').value;
+
+    // Send data to server using AJAX
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'contact-us.php', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.send('name=' + name + '&email=' + email + '&phone=' + phone + '&message=' + message);
+
+    // Handle response from server
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            console.log('Message sent successfully!');
+        } else {
+            console.error('Error sending message:', xhr.statusText);
+        }
+    };
+});
+```
